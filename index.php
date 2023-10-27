@@ -73,6 +73,7 @@ if (isset($_POST['PWD'])) {
     <form method="post" name="fname">
         <label for="PWD">Mot de passe :</label>
         <input type="password" id="PWD" name="PWD" required>
+        <input type="password" id="PWD" name="PWD" required>
         <input type="submit" value="Valider">
     </form>
 </body>
