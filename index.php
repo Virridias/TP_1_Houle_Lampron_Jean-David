@@ -41,6 +41,7 @@ echo "</>";
 $saltedPWD = addSalt($_POST['PWD']);
 var_dump($saltedPWD);
 
+
 echo "</br>";
 $criptedPWD = criptedPWD($saltedPWD);
 var_dump($criptedPWD);
@@ -60,6 +61,7 @@ if (isset($_POST['PWD'])) {
         }
     }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -72,8 +74,7 @@ if (isset($_POST['PWD'])) {
 <body>
     <form method="post" name="fname">
         <label for="PWD">Mot de passe :</label>
-        <input type="password" id="PWD" name="PWD" required>
-        <input type="password" id="PWD" name="PWD" required>
+        <input type="password" id="PWD1" name="PWD" required>
         <input type="submit" value="Valider">
     </form>
 </body>
